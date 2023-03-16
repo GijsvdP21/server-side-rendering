@@ -10,8 +10,11 @@ const app = express()
 // Load json files
 const gameData = fs.readFileSync('./public/api/game/943.json')
 
+
 // Parse data to json object
 const parsedData = JSON.parse(gameData)
+
+console.log(parsedData)
 
 // Every JSON file in the player folder
 const playerExtraData = fs.readdirSync('./public/api/facts/Player').filter(file => path.extname(file) === '.json');
@@ -37,7 +40,7 @@ playerExtraData.forEach(file => {
     extraPlayerData = [...extraPlayerData, parsedFileData]
 })
 
-console.log(extraPlayerData)
+// console.log(extraPlayerData)
 
 
 // Set the view engine of the app to ejs

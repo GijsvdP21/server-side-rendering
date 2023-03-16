@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    background-color: #040A3E;
+}
+
+
+/* scoreboard */
+
+.scoreboard {
+    margin: 2rem;
+    background-color: white;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.scoreboard-head {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: .3rem;
+}
+
+.scoreboard-status {
+    opacity: 1;
+}
+
+
+.scoreboard-division {
+    background: linear-gradient(180deg, #FF0000 0%, #0500FF 100%);
+    color: white;
+    font-size: 15px;
+    border-radius: 2px;
+}
